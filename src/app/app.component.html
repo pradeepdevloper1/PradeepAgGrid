@@ -1,0 +1,15 @@
+
+  <div id="getbtndiv"><button (click)="getSelectedRows()">Get selected Rows</button></div>
+  <div id="mytxt"></div>
+  <div id="myGrid" class="ag-theme-alpine" style="width: 500px; height: 200px;">
+  <ag-grid-angular
+  #agGrid
+      style="width:1300px; height: 500px;"
+      class="ag-theme-alpine"
+      [rowData]="rowData| async"
+      [columnDefs]="columnDefs"
+      rowSelection="multiple"
+      >
+  </ag-grid-angular>
+  
+</div>
